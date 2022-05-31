@@ -1,0 +1,236 @@
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header-color: #ffffff;
+  --main-color: #ffffff;
+  --second-color: #67d8c9;
+  --text-color: black;
+  --main-font: 'Koulen', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #000000 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+.navbar {
+  background-color: var(--header-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: rgba(204, 204, 204, 0.897);
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+.main-container {
+  min-height: 91vh;
+  position: relative;
+  overflow: auto;
+}
+
+.main-img {
+  position: relative;
+  text-align: center;
+}
+
+#image-kids {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 80%;
+  opacity: 10%;
+  z-index: -1;
+}
+
+.descricao {
+  font-family: var(--main-font);
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgb(87, 87, 87);
+  text-align: center;
+  margin-top: 2rem;
+  cursor: default;
+  color: var(--text-color);
+}
+
+.slogan {
+  position: relative;
+  color: var(--text-color);
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(87, 87, 87);
+  padding-bottom: 5rem;
+  font-family: 'Roboto Mono', monospace;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.slogan::before,
+.slogan::after {
+  background-color: black;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.slogan::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.slogan::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+form {
+  max-width: 20rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  box-shadow: 6px 3px 11px 0px #797979;
+}
+
+.fale-comigo {
+  margin-top: 1rem;
+}
+
+.button {
+  text-align: center;
+}
+
+button[type='submit'] {
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 2px solid rgba(0, 0, 0, 0.897);
+  color: #000000;
+}
+
+button[type='submit']:hover {
+  background-color: rgba(0, 0, 0, 0.897);
+  border-color: white;
+}
+
+.myButton {
+  box-shadow: 3px 1px 11px 0px #050505;
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Trebuchet MS;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 18px 76px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn:focus {
+  box-shadow: 6px 3px 11px 0px #797979;
+}
+
+.inline {
+  text-align: center;
+  display: block;
+}
+
+.container-2 {
+  min-height: 100vh;
+  background: white;
+  padding: 3rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.897);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.897);
+}
+
+.card-photo {
+  max-width: 100%;
+  max-height: 16rem;
+}
+
+.card {
+  box-shadow: 1px 4px 20px 0px #929292;
+  border: 2px solid rgba(0, 0, 0, 0.897);
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.header2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+  text-shadow: 1px 1px 11px rgba(150, 150, 150, 1);
+}
+
+.container-3 {
+  min-height: 100vh;
+  background: white;
+}
